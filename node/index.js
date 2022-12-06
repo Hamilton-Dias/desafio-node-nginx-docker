@@ -4,7 +4,7 @@ const dbConnection = require('./db.js');
 
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = 3000;
 
 dbConnection.connect();
 
