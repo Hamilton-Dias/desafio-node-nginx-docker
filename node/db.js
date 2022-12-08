@@ -17,6 +17,8 @@ var obj = {
         obj.con.connect(function(err) {
             if (err) throw err;
             console.log("Connected!");
+
+            obj.con.query("CREATE TABLE IF NOT EXISTS people(id int not null auto_increment, name varchar(255), primary key(id))");
         });
     },
 
